@@ -13,9 +13,9 @@ app.use(cors(corsOptions));
 const PORT = process.env.PORT || 3001;
 
 const data = require('./routes/retrieve_and_ingest_data');
+const earthquakes = require('./routes/earthquakes');
 
 app.use('/ingest_data', data);
-
-app.use('/earthquakes', require('./routes/earthquakes'));
+app.use('/earthquakes', earthquakes);
 
 app.listen(PORT, () => { console.log(`Server is listening at http://localhost:${PORT}`) });
