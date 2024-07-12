@@ -1,4 +1,4 @@
-const client = require('./elasticsearch/client');
+const client = require('./client');
 
 async function generateApiKeys(opts) {
     const body = await client.security.createApiKey({
