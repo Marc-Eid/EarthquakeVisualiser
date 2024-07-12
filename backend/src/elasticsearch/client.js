@@ -9,8 +9,7 @@ const client = new Client({
     },
 
     auth: {
-        username: elasticConfig.username,
-        password: elasticConfig.password,
+        apiKey: elasticConfig.apiKey,
     },
 });
 
