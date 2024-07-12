@@ -33,6 +33,20 @@ const App = () => {
       });
   };
 
+  const sendRefreshRequest = () => {
+    const results = {
+      method: 'GET',
+      url: 'http://localhost:3001/refresh/earthquakes',
+    };
+    axios.request(results)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   return (
     <div className='app'>
       <nav>
@@ -117,6 +131,7 @@ const App = () => {
             </li>
             <li>
               <button onClick={sendSearchRequest}>Search</button>
+              <button onClick={sendRefreshRequest}>Refresh</button>
             </li>
           </ul>
         </div>

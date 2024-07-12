@@ -16,6 +16,8 @@ const data = require('./routes/retrieve_and_ingest_data');
 const earthquakes = require('./routes/earthquakes');
 
 app.use('/ingest_data', data);
+app.use('/refresh', data);
+
 app.use('/earthquakes', earthquakes);
 
 app.listen(PORT, () => { console.log(`Server is listening at http://localhost:${PORT}`) });
