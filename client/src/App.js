@@ -13,7 +13,7 @@ const App = () => {
   const sendSearchRequest = () => {
     const results = {
       method: 'GET',
-      url: 'http://localhost:3001/results',
+      url: 'http://localhost:3001/earthquakes/all',
       params: {
         type: chosenType,
         mag: chosenMag,
