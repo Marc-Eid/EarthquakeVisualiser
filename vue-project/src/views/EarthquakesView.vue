@@ -54,6 +54,10 @@ export default {
                 });
         },
     },
+    
+    mounted() {
+        this.sendRefreshRequest();
+    },
 };
 </script>
 
