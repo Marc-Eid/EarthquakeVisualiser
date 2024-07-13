@@ -136,7 +136,7 @@ export default {
 
 
 <style>
-.results-text {
+.results-card {
     border-radius: 25px;
     background-color: rgb(104, 209, 104);
     margin: 1rem;
